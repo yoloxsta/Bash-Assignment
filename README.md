@@ -20,9 +20,6 @@ sudo nano /etc/ssh/sshd_config
 
 Add the following block at the bottom:
 
-pgsql
-Copy
-Edit
 Match Group sftpusers
     ChrootDirectory /data/sftp
     ForceCommand internal-sftp
