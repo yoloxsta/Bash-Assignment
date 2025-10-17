@@ -34,4 +34,21 @@ PasswordAuthentication yes
 PermitRootLogin no
 UsePAM yes
 
+---
+=> Key Based
+
+On the server, check the sftpuser home directory:
+
+sudo mkdir -p /home/sftpuser/.ssh
+sudo nano /home/sftpuser/.ssh/authorized_keys
+
+
+Paste the contents of your local id_
+
+Then set proper permissions:
+
+sudo chown -R sftpuser:sftpusers /home/sftpuser/.ssh
+sudo chmod 700 /home/sftpuser/.ssh
+sudo chmod 600 /home/sftpuser/.ssh/authorized_keys
+
 ```
