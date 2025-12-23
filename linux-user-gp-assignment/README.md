@@ -40,7 +40,7 @@ Add user1 and user2 to devops group:
 sudo usermod -aG devops user1
 sudo usermod -aG devops user2
 
-⚠️ Important: -aG means append group (never forget -a).
+=>Important: -aG means append group (never forget -a).
 ```
 ### Check group members:
 ```
